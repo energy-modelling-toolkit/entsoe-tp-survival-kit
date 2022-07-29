@@ -19,7 +19,6 @@ In this repository I will show two things:
 With the bash script `download_sftp.sh` you can download one or multiple folders from the ENTSO-E TP. For example, I have this script launched by cron every day to download the daily update of the data. 
 To use this you need to [register to the TP](https://transparency.entsoe.eu/usrm/user/createPublicUser).
 
-
 ## Conversion from CSV to Feather
 [Feather](https://arrow.apache.org/docs/python/feather.html) is a portable file format very fast to read. It is implemented both in Python (`pandas`, `pyarrow`) and R (`arrow`, `feather`) and it is my first choice when saving tabular data. 
 
@@ -46,7 +45,7 @@ I have uploaded my current (27/07/2022) snapshot on [Zenodo](https://doi.org/10.
 |2020-01-01 |AT      |CTY          |Fossil Oil       |                   0.00|2020-01-01 02:17:41 |PT15M          |                 0|1577836800-AT-Fossil Oil       |
 |2020-01-01 |AT      |CTY          |Geothermal       |                   0.07|2020-01-01 02:17:39 |PT15M          |                 0|1577836800-AT-Geothermal       |
 
-Each row/item represents a power generation event in the country area defined by `MapCode` happening at the timestamp `DateTime` and added to the Transparency Platform at `UpdateTime`. 
+Each row/item represents a power generation event in the country area defined by `MapCode` happening at the timestamp `DateTime` and added to the Transparency Platform at `UpdateTime`. The dataset I have shared not only contains the data reported by the TP, but also all the thousands of changes that happens every day.
 
 ## How the data is updated
 
